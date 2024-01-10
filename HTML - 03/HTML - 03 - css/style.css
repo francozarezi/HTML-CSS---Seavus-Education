@@ -1,0 +1,37 @@
+/* universal selector */
+*{
+    font-family: Arial;
+}
+
+/* type selector */
+main{
+    background-color: skyblue;
+}
+
+p{
+    font-size: 22px;
+}
+
+/* class selector */
+.yellow-background{
+    background-color: yellow;
+}
+
+.blue-text{
+    color: blue;
+}
+
+/* ID selector */
+#links{
+    font-size: 14px;
+}
+
+/* child selector */
+section > p{
+    background-color: darkcyan;
+}
+
+/* descedant selector */
+main li{
+    color: violet;
+}
