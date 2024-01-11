@@ -2,41 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Nested list</title>
 </head>
 <body>
-    <ol>
-        <li>Sugar
-            <ul>
-                <li>White sugar</li>
-                <li>Brown sugar</li>
-            </ul>
-        </li>
-        <li>Oil
-            <ul>
-                <li><u>Vegetable oil</u></li>
-                <li><b>Olive oil</b></li>
-            </ul>
-        </li>
-        <li>Meat
-            <ul>
-                <li>Pork
-                    <ul>
-                        1kg
-                    </ul>                    
-                </li>
-                <li>Beef
-                    <ul>2.5 kg</ul>
-                </li>
-                <li>Chicken
-                    <ul>
-                        <li>Chiken brest 1.5 kg</li>
-                        <li>Chiken legs 2.5 kg</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ol>
+
+<!-- We can use abbreviation element with <abbr> tag and 'title' attribute to specify the full term-->
+    <h1><abbr title="Nested list - examples">Nested list</abbr></h1>
+
+<!-- Ordered list (created with the <ol> element and placed within <li> tag)-->
+
+<ol>
+    <li><b>Sugar</b></li> 
+    <li>Milk</li>
+    <li>Bread</li>
+</ol>
+
+<!-- Unordered list (created with the <ul> element and placed within <li> tag) -->
+
+<ul>
+    <li>Sugar</li>
+    <li>Bread</li>
+    <Li>Milk</Li>
+</ul>
+
+<!-- Description list (created with DL element and contains <dt> and <dd>> elements. 
+    <dt> stands for the tem being described and <dd> contain the description) -->
+
+<dl>
+    <dt>Sashimi</dt>
+    <dd>Sliced raw fish that is served with condiments such as shredded daikon radish</dd>
+    <dt>Scale</dt>
+    <dd>A device used to accurately measure the weight</dd>    
+</dl>
+
+<!-- Nested list (we can put a list inside of the list inside of <li> element) -->
+
+<ul>
+    <li><abbr title="A lot of milk"></abbr>Milk</li>
+    <li>Sugar</li>
+    <li>Meat
+        <ul>
+            <li>Pork</li>
+            <li>Beef</li>
+            <li>Poultry
+                <ul>
+                    <!-- Inside this <li> element we put another <ul> or <ol> element and fill it wiht the new <li> elements-->
+                    
+                        <li>Chicken  
+                        <ul>
+                        <!-- We can use <del> tag to cross the word -->
+                            <li><del>Imported</del></li>
+                        <!-- Also, we can use <ins> tag -->
+                            <li><u>Home grown</u></Li>
+                        </ul>
+                    </li>
+
+                    <!-- Inside this <li> element we put another <ul> or <ol> element and fill it wiht the new <li> elements-->
+
+                    <li>Turkey
+                        <ul>
+                            <li>Home grown</li>
+                            <li>Imported</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<!--  -->
+<p><small>All rights reserved.</small></p>
 </body>
 </html>
